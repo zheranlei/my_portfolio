@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Zheran Lei">
+
+    <title>Zheran Lei's Portfolio</title>
+
+    <!--Bootstrap, w3 and customised style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="title-super col-xs-6 col-sm-8 col-lg-10 text-left text-uppercase">
+                <h1>Zheran Lei</h1>
+                <h4>Front-end Engineer</h4>
+                <button type="button" class="w3-button w3-small w3-round w3-hover-purple w3-blue" data-toggle="modal"
+                        data-target="#AboutMe">About Me
+                </button>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-lg-2">
+                <img class="profilePicture1" src="images/sunglasses_peru.jpg" alt="sunglasses">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+    </header>
+
+    <section class="row">
+        <header class="col-md-12 section">
+            <h2 class="projects-name">Projects</h2>
+        </header>
+
+        <article class="col-md-4">
+            <img class="img-responsive img-rounded img-thumbnail mouse-hover" data-toggle="modal"
+                 data-target="#RISC-V-Instruction-Set-Emulator"
+                 src="images/RISC-V Instruction Set Emulator.png" alt="RISC-V Instruction Set Emulator">
+            <h3 class="title">RISC-V Instruction Set Emulator</h3>
+        </article>
+
+        <article class="col-md-4">
+            <img class="img-responsive img-rounded img-thumbnail mouse-hover"
+                 src="images/small database.jpg" alt="A small version of database" data-toggle="modal" data-target="#A-small-version-of-database">
+            <h3 class="title">A small version of database</h3>
+        </article>
+
+        <article class="col-md-4">
+            <img class="img-responsive img-rounded img-thumbnail mouse-hover"
+                 src="images/scheme.png" alt="A Scheme Interpreter" data-toggle="modal" data-target="#A-Scheme-Interpreter">
+            <h3 class="title">A Scheme Interpreter</h3>
+        </article>
+    </section>
+
+    <section class="list">
+        <header class="col-md-12 section">
+            <h2 class="activities">Extra-curriculum activies</h2>
+        </header>
+        <ul class="list-activities">
+            <li>Lab Assistant for CS61A Structure and Interpretation of Computer Programs</li>
+            <li>Candidates of UEA Professional Affairs Committee</li>
+            <li>Volunteer in Virtual Experience Convention</li>
+        </ul>
+    </section> 
+
+    <!--footer-->
+    <footer class="col-md-12">
+        <p>Copyright © 2018 Zheran Lei</p>
+    </footer>
+</div>
+
+<!--Things after clicking some buttons-->
+<div class="modal fade" id="AboutMe" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content Something u need to know about me-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Zheran Lei</h3>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive img-rounded img-thumbnail" src="images/profile_picture.jpeg"
+                     alt="profile picture">
+                <article>
+                    <h4 class="profile-content">
+                        UC Berkeley junior student: Proficient programming skills in C, Java, Python, HTML5, CSS, Scheme, Logic; 
+                        Coursework: Data Structures, Data Science, Discrete Math and Probability, Differential Equations, Linear Algebra, Front end development, Computer Security (in progress)
+                    </h4>
+                </article>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="RISC-V-Instruction-Set-Emulator" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">RISC-V Instruction Set Emulator</h3>
+            </div>
+            <div class="modal-body">
+                    <p class="proj-descprition">
+                        Use C language to create an emulator that is able to execute a subset of the RISC-V ISA. Provide the machinery to decode and execute a couple dozen RISC-V instructions. When given an instruction encoded as a 32-bit integer, the emulator can reproduce the original RISC-V instruction in human- readable format. It can print the instruction name; print all arguments, following the order and formatting; fetch an instruction from memory, using the PC as the address; executes the instruction and updates the PC. In addition, I have to modify the appropriate registers; make any necessary calls to memory; update the program counter to refer to the next instruction to execute; takes an address, a size, and a value and stores the first (and next)-size- bytes of the given value at the given address.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="A-small-version-of-database" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">A small version of database</h3>
+            </div>
+            <div class="modal-body">
+                    <p class="proj-descprition">
+                        Build a small version of what is called a relational database management system (DBMS), as well as a DSL (Domain Specific Language) with which a user can interact with your database. The language implemented is similar to the declarative programming language SQL, which is used in the real world to interact with and query databases, large or small. First, we make our database support some commands, which is very similar to SQL. Then, this database can handle special values, like NaN and Novalue. It is capable of parsing the commands your database should accept and displaying a brief summary of the command. Finally, it can join multiple tables together by following the rule of Cartesian Product of the tables.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="A-Scheme-Interpreter" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">A Scheme Interpreter</h3>
+            </div>
+            <div class="modal-body">
+                    <p class="proj-descprition">
+                        Use python to develop an interpreter for a subset of the Scheme language. Basically, it contains: reading Scheme expressions; symbol evaluation; calling built-in procedures; definitions; lambda expressions and procedure definition; calling user-defined procedures; evaluation of special forms.
+                    </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

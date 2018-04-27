@@ -1,0 +1,57 @@
+img {
+	max-width: 100%;
+    height: auto;
+}
+body {
+	font-family: "Gill Sans", sans-serif;
+	color: #4e635a;
+    font-weight: 300;
+    background-color:#5ca2db; 
+}
+h4.big {
+	font-family: "Gill Sans", sans-serif;
+	color: #4e635a;
+	font-weight: 300;
+	line-height: 1.5;
+}
+p {
+	font-family: "Gill Sans", sans-serif;
+	color: #4e635a;
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 120%;
+}
+.projects-name {
+    margin-top: 50px;
+}
+.title {
+    color: silver;
+    margin-bottom: 50px;
+    text-align: center;
+}
+hr {
+    display: block;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
+.text-muted {
+    color: #BCBBBB;
+}
+.text-thin {
+    font-weight: 100;
+}
+.title-super {
+    font-size: 60px;
+}
+.section {
+	color: purple;
+}
+.mouse-hover {
+	cursor: pointer;
+}
+footer {
+	margin-top: 50px;
+	font-size: 1.2em;
+	font-weight: 400;
+	text-align: center;
+}
